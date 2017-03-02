@@ -562,12 +562,9 @@ int daemon_init(void)
 }
 
 int main(int argc, char** argv) {
-	DEBUG = (argc > 2);
-	ONCE = (argc > 3);
-	if (argc > 1)
-		strcpy(oj_home, argv[1]);
-	else
-		strcpy(oj_home, "/home/judge");
+	DEBUG = (argc > 1);
+	ONCE = (argc > 2);
+	strcpy(oj_home, "/home/judge");
 	chdir(oj_home);    // change the dir
 
 	sprintf(lock_file,"%s/etc/judge.pid",oj_home);
