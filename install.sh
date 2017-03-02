@@ -28,7 +28,6 @@ mkdir /home/judge/run3
 cp java0.policy  judge.conf /home/judge/etc
 
 chown -R judge /home/judge
-chgrp -R $APACHEUSER /home/judge/data
 chgrp -R root /home/judge/etc /home/judge/run?
 chmod 775 /home/judge /home/judge/data /home/judge/etc /home/judge/run?
 
