@@ -6,7 +6,7 @@
 #and run this with root
 
 #CENTOS/REDHAT/FEDORA WEBBASE
-
+set -x
 #try install tools
 apt-get update && apt-get install -y make flex g++ clang libmysql++-dev openjdk-7-jdk python python3
 
