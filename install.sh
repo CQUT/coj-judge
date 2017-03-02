@@ -8,7 +8,7 @@
 #CENTOS/REDHAT/FEDORA WEBBASE
 
 #try install tools
-apt-get update && apt-get install make flex g++ clang libmysql++-dev openjdk-7-jdk python python3
+apt-get update && apt-get install -y make flex g++ clang libmysql++-dev openjdk-7-jdk python python3
 
 #create user and homedir
 /usr/sbin/useradd -m -u 1536 judge
